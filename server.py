@@ -10,8 +10,8 @@ nok_message = '\nHTTP/1.0 404 Not Found\n\n'
 
 def process_start(s_sock, self, a=0, recieve=0, change=0, temp=0):
 
-	s_sock.send(str.encode("*****ASA BOOKSTORE*****")
-	s_sock.send(str.encode("**PLEASE SELECT THE NUMBER OF PURCHASING ITEMS**")
+	s_sock.send(str.encode("*****ASA BOOKSTORE*****"))
+	s_sock.send(str.encode("**PLEASE SELECT THE NUMBER OF PURCHASING ITEMS**"))
 	s_sock.send(str.encode("\n1.Mathematics for Dummies---->30", "\n2.Bisik Ombak Gelora---->35", "\n3.Aruffin & Ariffin---->50", "\n4.English for Dummies---->40", "\n5.Cash Out", "\n6.Exit"))
 	
 	self.a = a
